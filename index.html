@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array</title>
+</head>
+<body>
+    <h1>JavaScript Assignments </h1>
+
+    <script>
+        // Task 1
+        //Create an array with five fruit names and print the second element
+         let fruits = [ "Apple", "Banana", "Mango", "Orange", "Pineapple", ];
+        document.write( "Task no 1: ", fruits[1] ,"<br><br>");
+
+
+
+        // Task 2
+        //Replace the third element of an array with "Mango" and print the updated array.
+        
+        let fruit = [ "Apple", "Banana", "Grape ", "Orange", "Pineapple", ];
+        fruit[2] = "Mango";
+        document.write( "Task no 2: ", fruit , "<br><br>");
+
+
+
+
+        //task no 3
+        //Create an empty array and add three colors to it using push(). Print the array
+
+        let colors = [];
+        colors.push("red ", "Green ", "Blue ");
+        document.write("Task no 3: ", colors, "<br><br>");
+
+
+
+        //task no 4
+        //Remove the last element of an array using pop() and print the removed element.
+
+        let cars =["BMW ", "Mercedes ", "Ferrari ", "Toyota ", "Honda "];
+        cars.pop("Honda");
+        document.write("Task no 4: "+ cars, "<br><br>")
+
+
+        //Task no 5
+        //Add two numbers at the beginning of an array using unshift() and print the array.
+        const numbers = [13, 14, 15, 16, 17,18, 19 ,20 ];
+        numbers.unshift("11, 12");
+        document.write("Task no 5:", numbers, "<br><br>" );
+
+
+        //Task no 6
+        //Remove the first element of an array using shift() and print the updated array.
+
+        const RemoveNumber = [11, 12,13,14,15,16,17,18,19,20];
+        RemoveNumber.shift("11");
+        document.write("Task no 6:", RemoveNumber, "<br><br>");
+
+        //Task no 7
+        //Print the length of an array containing four elements
+
+        const FruitLength = ["Mango ", "Banana ", "Orange ", "Grapes ", "Strawberry "];
+        document.write( "Task no 7:  ", FruitLength.length ,"<br><br>");
+
+        //Task no 8
+        //Extract the last two elements from an array using slice() and print them.
+
+        const RacingCars = ["Bugatti ", "Ferrari ", "Ford", "Nissan ", "Mercedes-Benz"];
+         lastTwoItems = RacingCars.slice(2)
+        document.write("Task no 8: ", lastTwoItems ,"<br><br>")
+
+        //Task no 9 
+        // Extract the middle element(s) of an array with an even number of elements using slice()document.querySelector(');
+
+        const evenNum = [1,2,3,4,5,6,7,8,9,10];
+        MiddleNum = evenNum.slice(3,5);
+        document.write( "Task no 9:", MiddleNum, "<br><br>");
+
+
+
+        //Task no 10
+        //Replace two middle elements in an array using splice() and print the updated array.
+
+        const vegetable = ["Onion ", "Corn ", "Radish ", "chili"];
+        adding = vegetable.splice(2,0, "mint ","Cabbage");
+        document.write("Task no 10: ", vegetable, "<br><br>" );
+
+
+        //Push, Pop, Shift, and Unshift
+        // Task no 11
+        //Create an array of three cities and add a new city at the end using push().
+
+        const cities = ["Peshawar ", "Islamabad ", "Karachi " ];
+        cities.push("Lahore");
+        document.write("Task no 11: ", cities, "<br><br>")
+
+
+        //Task no 12 
+        // Remove the last city from an array using pop() and print the updated array.
+
+        const RemoveCity = ["Peshawar ", "Karachi ", "Banu "];
+        RemoveCity.pop("Banu ")
+        document.write("Task no 12: ", RemoveCity, "<br><br>" );
+
+
+        //Task no 13
+        //Add two new colors to the beginning of an array using unshift() and print the array.
+
+        const color = ["White ", "Black ", "Orange "];
+        color.unshift("Purple ", "Gray");
+        document.write("Task no 13: ", color, "<br><br>" );
+
+        //Task no 14 
+        //Remove the first color from an array using shift() and print the removed color.
+        const remove = ["White ", "Black ", "Orange "];
+        remove.shift("white");
+        document.write("Task no 14:", remove, "<br><br>");
+
+        //Task no 15
+        //Use push() twice to add two new names to an array and print the array.
+
+        const classRoom = ["Ali ", "Osama ", "Ahmad "];
+        classRoom.push("Fahad ", "Khan");
+        document.write("Task no 15: ", classRoom, "<br><br>");
+
+        //Task no 16
+        //Use pop() on an array of five elements and check if the length is now four
+
+        const pop = [10,20,30,40,50,];
+        pop.pop();
+        document.write('Task no 16: ', pop ,"<br><br>");
+
+    </script>
+</body>
+</html>
