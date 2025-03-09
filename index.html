@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Array</title>
 </head>
+
 <body>
     <h1>JavaScript Assignments </h1>
 
     <script>
         // Task 1
         //Create an array with five fruit names and print the second element
-         let fruits = [ "Apple", "Banana", "Mango", "Orange", "Pineapple", ];
-        document.write( "Task no 1: ", fruits[1] ,"<br><br>");
+        let fruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple",];
+        document.write("Task no 1: ", fruits[1], "<br><br>");
 
 
 
         // Task 2
         //Replace the third element of an array with "Mango" and print the updated array.
-        
-        let fruit = [ "Apple", "Banana", "Grape ", "Orange", "Pineapple", ];
+
+        let fruit = ["Apple", "Banana", "Grape ", "Orange", "Pineapple",];
         fruit[2] = "Mango";
-        document.write( "Task no 2: ", fruit , "<br><br>");
+        document.write("Task no 2: ", fruit, "<br><br>");
 
 
 
@@ -38,22 +40,22 @@
         //task no 4
         //Remove the last element of an array using pop() and print the removed element.
 
-        let cars =["BMW ", "Mercedes ", "Ferrari ", "Toyota ", "Honda "];
+        let cars = ["BMW ", "Mercedes ", "Ferrari ", "Toyota ", "Honda "];
         cars.pop("Honda");
-        document.write("Task no 4: "+ cars, "<br><br>")
+        document.write("Task no 4: " + cars, "<br><br>")
 
 
         //Task no 5
         //Add two numbers at the beginning of an array using unshift() and print the array.
-        const numbers = [13, 14, 15, 16, 17,18, 19 ,20 ];
+        const numbers = [13, 14, 15, 16, 17, 18, 19, 20];
         numbers.unshift("11, 12");
-        document.write("Task no 5:", numbers, "<br><br>" );
+        document.write("Task no 5:", numbers, "<br><br>");
 
 
         //Task no 6
         //Remove the first element of an array using shift() and print the updated array.
 
-        const RemoveNumber = [11, 12,13,14,15,16,17,18,19,20];
+        const RemoveNumber = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
         RemoveNumber.shift("11");
         document.write("Task no 6:", RemoveNumber, "<br><br>");
 
@@ -61,21 +63,21 @@
         //Print the length of an array containing four elements
 
         const FruitLength = ["Mango ", "Banana ", "Orange ", "Grapes ", "Strawberry "];
-        document.write( "Task no 7:  ", FruitLength.length ,"<br><br>");
+        document.write("Task no 7:  ", FruitLength.length, "<br><br>");
 
         //Task no 8
         //Extract the last two elements from an array using slice() and print them.
 
         const RacingCars = ["Bugatti ", "Ferrari ", "Ford", "Nissan ", "Mercedes-Benz"];
-         lastTwoItems = RacingCars.slice(2)
-        document.write("Task no 8: ", lastTwoItems ,"<br><br>")
+        lastTwoItems = RacingCars.slice(2)
+        document.write("Task no 8: ", lastTwoItems, "<br><br>")
 
         //Task no 9 
         // Extract the middle element(s) of an array with an even number of elements using slice()document.querySelector(');
 
-        const evenNum = [1,2,3,4,5,6,7,8,9,10];
-        MiddleNum = evenNum.slice(3,5);
-        document.write( "Task no 9:", MiddleNum, "<br><br>");
+        const evenNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        MiddleNum = evenNum.slice(3, 5);
+        document.write("Task no 9:", MiddleNum, "<br><br>");
 
 
 
@@ -83,15 +85,15 @@
         //Replace two middle elements in an array using splice() and print the updated array.
 
         const vegetable = ["Onion ", "Corn ", "Radish ", "chili"];
-        adding = vegetable.splice(2,0, "mint ","Cabbage");
-        document.write("Task no 10: ", vegetable, "<br><br>" );
+        adding = vegetable.splice(2, 0, "mint ", "Cabbage");
+        document.write("Task no 10: ", vegetable, "<br><br>");
 
 
         //Push, Pop, Shift, and Unshift
         // Task no 11
         //Create an array of three cities and add a new city at the end using push().
 
-        const cities = ["Peshawar ", "Islamabad ", "Karachi " ];
+        const cities = ["Peshawar ", "Islamabad ", "Karachi "];
         cities.push("Lahore");
         document.write("Task no 11: ", cities, "<br><br>")
 
@@ -101,7 +103,7 @@
 
         const RemoveCity = ["Peshawar ", "Karachi ", "Banu "];
         RemoveCity.pop("Banu ")
-        document.write("Task no 12: ", RemoveCity, "<br><br>" );
+        document.write("Task no 12: ", RemoveCity, "<br><br>");
 
 
         //Task no 13
@@ -109,7 +111,7 @@
 
         const color = ["White ", "Black ", "Orange "];
         color.unshift("Purple ", "Gray");
-        document.write("Task no 13: ", color, "<br><br>" );
+        document.write("Task no 13: ", color, "<br><br>");
 
         //Task no 14 
         //Remove the first color from an array using shift() and print the removed color.
@@ -120,17 +122,218 @@
         //Task no 15
         //Use push() twice to add two new names to an array and print the array.
 
-        const classRoom = ["Ali ", "Osama ", "Ahmad "];
+        const classRoom = ["Ali ", "Usman ", "Ahmad "];
         classRoom.push("Fahad ", "Khan");
         document.write("Task no 15: ", classRoom, "<br><br>");
 
         //Task no 16
         //Use pop() on an array of five elements and check if the length is now four
 
-        const pop = [10,20,30,40,50,];
+        const pop = [10, 20, 30, 40, 50,];
         pop.pop();
-        document.write('Task no 16: ', pop ,"<br><br>");
+        document.write('Task no 16: ', pop, "<br><br>");
+
+        //task no 17
+        //Use shift() on an array with three elements and print the updated array.
+
+        const shift = [10, 20, 30];
+        shift.shift();
+        document.write("Task no 17: ", shift, "<br><br>");
+
+        //Task no 18
+        //Use unshift() to add a new number at the beginning of an array and print it.
+
+        const unshift = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+        unshift.unshift(5);
+        document.write("Task no 18: ", unshift, "<br><br>");
+
+        //Task no 19
+        //Create an array of three numbers, remove the last one using pop(), and print the remaining array
+
+        const removeLast = [1, 2, 3,];
+        removeLast.pop();
+        document.write("Task no 19: ", removeLast, "<br><br>");
+
+        //Task no 20
+        //Create an array with three elements, remove the first using shift(), and print the  updated array
+
+
+        const removeFirst = [1, 2, 3,];
+        removeFirst.shift();
+        document.write("Task no 20: ", removeFirst, "<br><br>");
+
+        //Task no 21
+        //Extract the first three elements from an array using slice() and print them.
+
+        const extract = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const firstThree = extract.slice(0, 3);
+        document.write("Task no 21: ", firstThree, "<br><br>");
+
+        //Task no 22
+        //Extract elements from index 2 to 4 using slice() and print them
+
+        const extractIndex = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const index = extractIndex.slice(2, 5);
+        document.write("Task no 22: ", index, "<br><br>");
+
+        //Task no 23
+        //Remove two elements from an array starting from index 1 using splice().
+
+        const removeElement = [1, 2, 3, 4, 5,];
+        removeElement.splice(1, 2);
+        document.write("Task no 23: ", removeElement, "<br><br>");
+
+        //Task no 24
+        //Insert "Lemon" and "Orange" at index 2 in an array using splice() and print the updated array.
+
+        const shop = ["Apple ", "Banana ", "Mango ", "Grapes "];
+        shop.splice(2, 0, "Lemon", "Orange");
+        document.write("Task no 24: ", shop, "<br><br>");
+
+        //Task no 25
+        //Remove the last two elements using splice() and print the modified array.
+
+        const removeLastTwo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        removeLastTwo.splice(8, 2);
+        document.write("Task no 25: ", removeLastTwo, "<br><br>");
+
+        //Task no 26
+        //Use splice() to add three new numbers at the beginning of an array and print the array
+
+        const addNumber = [4, 5, 6, 7, 8, 9, 10];
+        addNumber.splice(0, 0, 1, 2, 3);
+        document.write("Task no 26: ", addNumber, "<br><br>");
+
+        //Task no 27
+        //Create an array with six elements, extract the last four using slice(), and print them.
+
+        const LastFour = [1, 2, 3, 4, 5, 6];
+        const lastFour = LastFour.slice(2);
+        document.write("Task no 27: ", lastFour, "<br><br>");
+
+        //Task no 28
+        //Use slice() on an array and check if the original array remains unchanged
+
+        const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const newArray = originalArray.slice(0, 5);
+        document.write("Task no 28: ", originalArray, "<br><br>");
+
+
+        //Task no 29
+        //Use splice() to remove one element from the middle of an array and print the updated array
+
+        const removeMiddle = [10, 20, 30, 40, 50,];
+        removeMiddle.splice(2, 1);
+        document.write("Task no 29: ", removeMiddle, "<br><br>");
+
+
+        //Task no 30
+        //Use splice() to replace two elements in an array and print the modified array.
+
+        const replaceElement = [10, 20, 30, 40, 50,];
+        replaceElement.splice(2, 2, 35, 45);
+        document.write("Task no 30: ", replaceElement, "<br><br>");
+
+        //task no 31
+        // Assign an array to another variable and modify the original array. Print both variables
+
+        const original = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const copy = original;
+        original[0] = 100;
+        document.write("Task no 31: ", original, "<br><br>");
+
+        //Task no 32
+        //Create a function that adds an element to an array and check if the original array changes.
+
+        const addElement = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function addElementToArray(array, element) {
+            array.push(element);
+        }
+        addElementToArray(addElement, 11);
+        document.write("Task no 32: ", addElement, "<br><br>");
+
+        //Task no 33
+        //Pass an array to a function, modify its first element, and print the modified array
+
+        const modifyElement = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function modifyFirstElement(array) {
+            array[0] = 100;
+        }
+        modifyFirstElement(modifyElement);
+        document.write("Task no 33: ", modifyElement, "<br><br>");
+
+        //task no 34
+        //Create an array, pass it to another variable, modify the second variable, and print both.
+
+        const array34 = ["11 ", "12 ", "13 ", "14 ", "15 "];
+        let arrayTwo = array34;
+
+        arrayTwo[5] = "20";
+        document.write("Task no 34:", array34, "<br><br>");
+
+
+        //Task no 35
+        //Check if two variables referencing the same array are equal after modifying one.
+
+        const arr1 = [1, 2, 3, 4, 5];
+        const arr2 = arr1;
+        arr2[0] = 100;
+        document.write("Task no 35: ", arr1 === arr2, "<br><br>");
+
+        //Task no 36
+        //Create an array, pass it to a function that removes an element, and print the result
+
+        function remove_array(array36) {
+            array36.pop();
+        }
+        const array_2 = ["apple ", "banana ", "mango ", "orange ", "grapes "];
+        remove_array(array_2);
+        document.write("Task no 36:", array_2, "<br><br>");
+
+
+        //task no 37
+        //Store an array in two different variables, modify one using push(), and print both.
+
+        const Num_OneArray = [10, 20, 30, 40, 50,];
+        const Arr_Two = Num_OneArray;
+        Arr_Two.push(60);
+        document.write("Task no 37: ", Num_OneArray, "<br><br>");
+
+
+        //Task no 38
+        //Use pop() on an array inside a function and see if the original array changes
+
+        function removeLastElement(arr) {
+            arr.pop(); //hum ny ak function lia. os k bad hum ny dosra array banya  myArray k name sy pir hum ny by refrence osy call kia. arr k name sy .
+        }
+        let myArray = [1, 2, 3, 4, 5,6];
+        removeLastElement(myArray);
+        document.write("Task no 38: ",myArray, "<br><br>");
+
+
+        //Task no 39 
+        // Pass an array to a function that changes its length and check the effect
+
+        function CheckLength(arr, NewLength) {
+            arr.length = NewLength;
+        }
+
+        let MyFruits = ["banana ","Apple", "Orange","mango"];
+        CheckLength(MyFruits,2);// ye 2 serf first two fruits ko print kary ga. agar hum ny 2 ki jagha 8 lika ya 9 lika tho wo empty space chory ga.
+        document.write("Task no 39:", MyFruits, "<br><br>")
+
+        //Task no 40 
+        //Create two separate arrays with identical elements and check if they are strictly equal.
+        
+        const FirstArray = ["a","b","c","d"];
+        const SecondArray = ["a","b","c","d"];
+
+        document.write("Task no 40:", FirstArray===SecondArray, "<br><br>") 
+        //Eska output false ay ga q k JS my Comparison Passed by Refrence hote hy ( means arrays name ) not passed by value.
+
+
 
     </script>
 </body>
+
 </html>
