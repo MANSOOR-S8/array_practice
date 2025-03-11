@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a Number </title>
+</head>
+<body>
+    <h1>Guess a Number.</h1>
+    <p>Guess the number between 1 and 10 and find the correct number.</p>
+
+
+    <script>
+
+        const ChooseNumber = Math.floor(Math.random() * 10) + 2;  //  Math.random() generates a decimal (floating-point) number between 0 and 1 (e.g., 0.23,) and we need whole number so "Math.floor" convert the decimal number to whole number.
+        let GuessNumber = 0; // 0 is not in that range, so it ensures the first prompt always runs. If we set guess = 1, and the secret number is also 1, the game would end before the user even gets a chance to guess
+
+
+        //agr "GuessNumber !== ChooseNumber" k tho ye program bar bar chalna chahiy. jab thak wo sahi number guess na kary.
+        while (GuessNumber !== ChooseNumber) {
+            GuessNumber = parseInt(prompt("Enter number between 1 and 10"));
+
+            if (GuessNumber > ChooseNumber){
+                alert("Try small number");
+
+            } else if (GuessNumber < ChooseNumber){
+                alert("Try greater number.");
+            }else {
+                alert("Congratulation!   You win the game.")
+            }
+        }
+
+
+    </script>
+</body>
+</html>
